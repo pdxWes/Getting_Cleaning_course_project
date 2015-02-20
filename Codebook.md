@@ -7,10 +7,9 @@ accelerometer and gyroscope for thirty subjects into a tidy data set. Using R, a
 following tidy data principles ready for analysis by a researcher/statistician.
 
 The data was sourced from the Getting and Cleaning Data course website. The original source with 
-additional information can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#).
-if more detail about the data is desired.
+additional information can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#) if more detail about the data is desired.
 
-The data was devided into a training set and test set. These were merged together to create a single dataset.
+The data was divided into a training set and test set. These were merged together to create a single dataset.
 The dataset contains 561 domain variables derived from the readings taken by the accelerometer (tria-axial acceleration) 
 and gyroscope(tri-axial angular acceleration). We are only interested in the derived means and standard deviations.
 This will reduce the dataset considerably and the variables presented in this code book will reflect that. 
@@ -34,12 +33,12 @@ This will reduce the dataset considerably and the variables presented in this co
 
 3. metric
   
-    mean - the mean of the data recorded on each subject for each observation
-    std - the standard deviation
+    mean - the mean signals recorded on each subject for each observation
+    std - the standard deviation of the signals
 
 4. vector_property
 
-    Almost all variables were recorded in 3-Dimensional space. The X,Y,X vectors are provided
+    Variables were recorded in 3-Dimensional space. The X,Y,X vectors are provided
     as well as the magnitude calculated from them.
 
 5. fBodyAcc
@@ -77,7 +76,7 @@ This will reduce the dataset considerably and the variables presented in this co
 
     Time domain Gravity Accelration signals
 
-No transformation of the data took place. The data set was created using the author's best 
+No transformations of the data took place. The data set was created using the author's best 
 understanding of Tidy data principles. One observation per row, one variable per column.
-Only three packages besides base were used in R, plyr, dplyr, and tidyr.See comments in the
+Only three packages besides base were used in R, plyr, dplyr, and tidyr. See comments in the
 R scripts run_anlaysis.R for rationale for decisions of specific R code.
